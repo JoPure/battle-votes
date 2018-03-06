@@ -1,0 +1,149 @@
+.exhibition{
+    width:48%;
+    height: 100%;
+    /*min-width: 892px;*/
+    margin-left: 26%;
+    margin-top: 1%;
+    float:left;
+    /*background-color: black;*/
+}
+
+.mainSection{
+    position: relative;
+    width: 99%;
+    height: 94%;
+    margin:0px auto;
+    padding:0;
+    /*background-color: #d5c8e2;*/
+    /*opacity: 0.5;*/
+}
+
+
+.mainSection li{
+    list-style: none;
+    /*cursor: pointer;*/
+}
+
+.mainSection li{
+    float: left;
+    margin: 1%;
+    position: relative;
+    padding-bottom: 2.5%;
+    /*background-color: blueviolet;*/
+    width: 18%;
+    height: 21%;
+}
+
+.vote{
+    width: 100%;
+    height: 6%;
+    bottom: 0;
+    text-align: center;
+    display: table;
+    background-color: rgb(31,96,173);
+    cursor: pointer;
+}
+
+.vote span{
+    color: #FFFFFF;
+    font-family:Arial;
+    font-weight: bold;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.vote:hover{
+    background-color: rgb(10,74,148);
+}
+
+.div1{
+    width: 100%;
+    height: 52%;
+    cursor: pointer;
+    overflow: hidden;
+    background-color: rgb(10,74,148);
+}
+
+.div1 img{
+    /*width: 100%;*/
+    height: 100%;
+}
+
+.div2{
+    width: 100%;
+    height: 38%;
+    display: table;
+    text-align: center;
+    background-color: rgb(31,96,173);
+}
+
+.div2-1{
+    width: 100%;
+    height: 60%;
+    display: table;
+    vertical-align: middle;
+    /*background-color: blueviolet;*/
+}
+
+.div2-1 span{
+    width: 100%;
+    height: 100%;
+    font-size: 38px;
+    display: table-cell;
+    vertical-align: middle;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-family: Arial;
+}
+
+.div2-2{
+    width: 100%;
+    height: 40%;
+    /*background-color: blue;*/
+}
+
+.div2-2 img{
+    width: 34%;
+    cursor: pointer;
+}
+
+.div3{
+    width: 100%;
+    height: 10%;
+    text-align: left;
+    color: rgb(103,194,246);
+    font-weight: bold;
+    font-family: Arial;
+    display: table;
+    border-bottom: 2px solid rgb(103,194,246);
+    /*background-color: darksalmon;*/
+}
+
+.div3 img{
+    height: 80%;
+    width: auto;
+    max-width: 100%;
+    margin: 2px;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.twoDimensionCode{
+    position: fixed;
+    width: 10%;
+    height: auto;
+    right: 20%;
+    bottom: 0;
+    z-index: 66;
+}
+
+.twoDimensionCode img{
+    width: 100%;
+    height:auto;
+    margin-left: 40%;
+}
+
+.voteIconSure{
+    width: 100%;
+    position: absolute;
+}

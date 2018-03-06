@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="content-type" content="text/html"/>
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1.0,user-scalable=no">
+    <meta name="viewport" content="width=device-width"/>
+    <title>การแข่งขันประกวดวาดภาพสาวเรือรบ</title>
+    <link rel="stylesheet" href="css/main.css" type="text/css">
+    <link rel="stylesheet" href="css/header.css" type="text/css">
+    <link rel="stylesheet" href="css/central.css" type="text/css">
+    <link rel="stylesheet" href="css/bottom.css" type="text/css">
+    <link rel="stylesheet" href="css/popupWindow.css" type="text/css">
+    <link rel="stylesheet" href="css/imgbox.css" type="text/css">
+    <script src="js/jquery-1.12.0.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.imgbox.pack.js"></script>
+    <script src="js/md5.js"></script>
+    <script src="js/events.js"></script>
+
+</head>
+
+<script>
+    $(function(){
+       $('.loginEntrance').click(function(){
+               $('.popupWindow-bg').fadeIn();
+           localStorage.setItem('fade',-2);
+       });
+
+        $('.imgSwitch').click(function(){
+            $('.popupWindow-bg').fadeOut();
+            localStorage.setItem('fade',1);
+        });
+
+        $(".zoomPic").imgbox({
+            'speedIn'		: 0,
+            'speedOut'		: 0,
+            'alignment'		: 'center',
+            'overlayShow'	: true,
+            'allowMultiple'	: false
+        });
+    });
+
+    function keyEvent(){
+        if(event.keyCode==13&&localStorage.fade<0){
+            document.getElementsByClassName('submit').click();
+        }
+    }
+</script>
+
+<body onload="init()">
+    <div class="main">
+        <div class="bodyMain">
+            <div class="twoDimensionCode">
+                <img src="img/twoDimensionCode.png">
+            </div>
+
+            <div class="header">
+                <div class="login">
+                    <div class="loginContent">
+                        <span class="loginEntrance">LOGIN</span>
+                        <span> | </span>
+                        <span class="logout">LOGOUT</span>
+                    </div>
+                    <div class="loginBG"><img src="img/login.png"></div>
+                </div>
+                <div class="logo"><img src="img/logo.png"></div>
+                <div class="slogan"><img src="img/slogan.png"></div>
+                <div class="topBanner"><img src="img/banner.png"></div>
+                <div class="navigation">
+                    <div class="navigationBG">
+                        <img src="img/navigation.png">
+                    </div>
+                    <div class="navigationLink">
+                        <a href="https://www.facebook.com/WarshipGirlsThai"><span>แฟนเพจ</span></a>
+                        <span>|</span>
+                        <a href="https://www.facebook.com/events/494900957361122/"><span>รูปภาพทั้งหมด</span></a>
+                        <span>|</span>
+                        <a href="http://wsgth.pocketgamesol.com/"><span>หน้าหลัก</span></a>
+                    </div>
+                    <div class="navigationDownload">
+                        <a href="https://goo.gl/gOyB7L">
+                            <div class="downloadApple" style="position: relative">
+                                <div class="downloadApple2" style="position: absolute;" >
+                                    <img src="img/downloadApple.png" >
+                                </div>
+                                <img src="img/downloadApple2.png">
+                            </div>
+                        </a>
+                        <a href="http://t.cn/RbkAwqC">
+                            <div class="downloadGoogle" style="position: relative;">
+                                <div class="downloadGoogle2" style="position: absolute;" >
+                                    <img src="img/downloadGoogle.png">
+                                </div>
+                                <img src="img/downloadGoogle2.png">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="central">
+               <div class="exhibition">
+                    <ul class="mainSection">
+                        <li>
+                            <div class="div1">
+                                <a class="zoomPic" href="img/imginfo/1.jpg"><img src="img/imginfo/pic1.jpg"></a>
+                            </div>
+                            <div class="div2">
+                                <div class="div2-1">
+                                    <span class="num1"></span>
+                                </div>
+                                <div class="div2-2 obj1" style="position: relative">
+                                    <div class="voteIconSure obj1-1" style="position: absolute" hidden>
+                                        <img src="img/voteIconSure.png">
+                                    </div>
+                                    <img src="img/voteIcon.png">
+                                </div>
+                            </div>
+                            <div class="div3">
+                                <img src="img/imginfo/info1.png">
+                            </div>
+                        </li>
+                        <li>
+                            <div class="div1">
+                                <a class="zoomPic" href="img/imginfo/2.jpg"><img src="img/imginfo/pic2.jpg"></a>
+                            </div>
+                            <div class="div2">
+                                <div class="div2-1">
+                                    <span class="num2"></span>
+                                </div>
+                                <div class="div2-2 obj2" style="position: relative">
+                                    <div class="voteIconSure obj22" style="position: absolute" hidden>
+                                        <img src="img/voteIconSure.png">
+                                    </div>
+                                    <img src="img/voteIcon.png">
+                                </div>
+                            </div>
+                            <div class="div3"><img src="img/imginfo/info2.png"></div>
+                        </li>
+                        <li>
+                            <div class="div1">
+                                <a class="zoomPic" href="img/imginfo/3.jpg"><img src="img/imginfo/pic3.jpg"></a>
+                            </div>
+                            <div class="div2">
+                                <div class="div2-1">
+                                    <span class="num3"></span>
+                                </div>
+                                <div class="div2-2 obj3" style="position: relative">
+                                    <div class="voteIconSure obj33" style="position: absolute" hidden>
+                                        <img src="img/voteIconSure.png">
+                                    </div>
+                                    <img src="img/voteIcon.png">
+                                </div>
+                            </div>
+                            <div class="div3"><img src="img/imginfo/info3.png"></div>
+                        </li>
+                        <li>
+                            <div class="div1">
+                                <a class="zoomPic" href="img/imginfo/4.jpg"><img src="img/imginfo/pic4.jpg"></a>
+                            </div>
+                            <div class="div2">
+                                <div class="div2-1">
+                                    <span class="num4"></span>
+                                </div>
+                                <div class="div2-2 obj4" style="position: relative">
+                                    <div class="voteIconSure obj44" style="position: absolute" hidden>
+                                        <img src="img/voteIconSure.png">
+                                    </div>
+                                    <img src="img/voteIcon.png">
+                                </div>
+                            </div>
+                            <div class="div3"><img src="img/imginfo/info4.png"></div>
+                        </li>
+                        <li>
+                            <div class="div1">
+                                <a class="zoomPic" href="img/imginfo/5.jpg"><img src="img/imginfo/pic5.jpg"></a>
+                            </div>
+                            <div class="div2">
+                                <div class="div2-1">
+                                    <span class="num5"></span>
+                                </div>
+                                <div class="div2-2 obj5" style="position: relative">
+                                    <div class="voteIconSure obj55" style="position: absolute" hidden>
+                                        <img src="img/voteIconSure.png">
+                                    </div>
+                                    <img src="img/voteIcon.png">
+                                </div>
+                            </div>
+                            <div class="div3"><img src="img/imginfo/info5.png"></div>
+                        </li>
+                        <li>
+                            <div class="div1">
+                                <a class="zoomPic" href="img/imginfo/6.jpg"><img src="img/imginfo/pic6.jpg"></a>
+                            </div>
+                            <div class="div2">
+                                <div class="div2-1">
+                                    <span class="num6"></span>
+                                </div>
+                                <div class="div2-2 obj6" style="position: relative">
+                                    <div class="voteIconSure obj66" style="position: absolute" hidden>
+                                        <img src="img/voteIconSure.png">
+                                    </div>
+                                    <img src="img/voteIcon.png">
+                                </div>
+                            </div>
+                            <div class="div3"><img src="img/imginfo/info6.png"></div>
+                        </li>
+                        <li>
+                            <div class="div1">
+                                <a class="zoomPic" href="img/imginfo/7.jpg"><img src="img/imginfo/pic7.jpg"></a>
+                            </div>
+                            <div class="div2">
+                                <div class="div2-1">
+                                    <span class="num7"></span>
+                                </div>
+                                <div class="div2-2 obj7" style="position: relative">
+                                    <div class="voteIconSure obj77" style="position: absolute" hidden>
+                                        <img src="img/voteIconSure.png">
+
+                                          </div>
+                                    <img src="img/voteIcon.png">
+                                </div>
+                            </div>
+                            <div class="div3"><img src="img/imginfo/info7.png"></div>
+                        </li>
+                        <li>
+                            <div class="div1">
+                                <a class="zoomPic" href="img/imginfo/8.jpg"><img src="img/imginfo/pic8.jpg"></a>
+                            </div>
+                            <div class="div2">
+                                <div class="div2-1">
+                                    <span class="num8"></span>
+                                </div>
+                                <div class="div2-2 obj8" style="position: relative">
+                                    <div class="voteIconSure obj88" style="position: absolute" hidden>
+                                        <img src="img/voteIconSure.png">
+                                    </div>
+                                    <img src="img/voteIcon.png">
+                                </div>
+                            </div>
+                            <div class="div3"><img src="img/imginfo/info8.png"></div>
+                        </li>
+                        <li>
+                            <div class="div1">
+                                <a class="zoomPic" href="img/imginfo/9.jpg"><img src="img/imginfo/pic9.jpg"></a>
+                            </div>
+                            <div class="div2">
+                                <div class="div2-1">
+                                    <span class="num9"></span>
+                                </div>
+                                <div class="div2-2 obj9" style="position: relative">
+                                    <div class="voteIconSure obj99" style="position: absolute" hidden>
+                                        <img src="img/voteIconSure.png">
+                                    </div>
+                                    <img src="img/voteIcon.png">
+                                </div>
+                            </div>
+                            <div class="div3"><img src="img/imginfo/info9.png"></div>
+                        </li>
+
+                        <li>
+                            <div class="div1">
+                                <a class="zoomPic" href="img/imginfo/10.png"><img src="img/imginfo/pic10.jpg"></a>
+                            </div>
+                            <div class="div2">
+                                <div class="div2-1">
+                                    <span class="num10"></span>
+                                </div>
+                                <div class="div2-2 obj10" style="position: relative">
+                                    <div class="voteIconSure obj1010" style="position: absolute" hidden>
+                                        <img src="img/voteIconSure.png">
+                                    </div>
+                                    <img src="img/voteIcon.png">
+                                </div>
+                            </div>
+                            <div class="div3"><img src="img/imginfo/info10.png"></div>
+                        </li>
+                        <li>
+                            <div class="div1">
+                                <a class="zoomPic" href="img/imginfo/11.jpg"><img src="img/imginfo/pic11.jpg"></a>
+                            </div>
+                            <div class="div2">
+                                <div class="div2-1">
+                                    <span class="num11"></span>
+                                </div>
+                                <div class="div2-2 obj11" style="position: relative">
+                                    <div class="voteIconSure obj1111" style="position: absolute" hidden>
+                                        <img src="img/voteIconSure.png">
+                                    </div>
+                                    <img src="img/voteIcon.png">
+                                </div>
+                            </div>
+                            <div class="div3"><img src="img/imginfo/info11.png"></div>
+                        </li>
+                        <li>
+                            <div class="div1">
+                                <a class="zoomPic" href="img/imginfo/12.png"><img src="img/imginfo/pic12.jpg"></a>
+                            </div>
+                            <div class="div2">
+                                <div class="div2-1">
+                                    <span class="num12"></span>
+                                </div>
+                                <div class="div2-2 obj12" style="position: relative">
+                                    <div class="voteIconSure obj1212" style="position: absolute" hidden>
+                                        <img src="img/voteIconSure.png">
+                                    </div>
+                                    <img src="img/voteIcon.png">
+                                </div>
+                            </div>
+                            <div class="div3"><img src="img/imginfo/info12.png"></div>
+                        </li>
+                        <li>
+                            <div class="div1">
+                                <a class="zoomPic" href="img/imginfo/13.jpg"><img src="img/imginfo/pic13.jpg"></a>
+                            </div>
+                            <div class="div2">
+                                <div class="div2-1">
+                                    <span class="num13"></span>
+                                </div>
+                                <div class="div2-2 obj13" style="position: relative">
+                                    <div class="voteIconSure obj1313" style="position: absolute" hidden>
+                                        <img src="img/voteIconSure.png">
+                                    </div>
+                                    <img src="img/voteIcon.png">
+                                </div>
+                            </div>
+                            <div class="div3"><img src="img/imginfo/info13.png"></div>
+                        </li>
+                        <li>
+                            <div class="div1">
+                                <a class="zoomPic" href="img/imginfo/14.jpg"><img src="img/imginfo/pic14.jpg"></a>
+                            </div>
+                            <div class="div2">
+                                <div class="div2-1">
+                                    <span class="num14"></span>
+                                </div>
+                                <div class="div2-2 obj14" style="position: relative">
+                                    <div class="voteIconSure obj1414" style="position: absolute" hidden>
+                                        <img src="img/voteIconSure.png">
+                                    </div>
+                                    <img src="img/voteIcon.png">
+                                </div>
+                            </div>
+                            <div class="div3"><img src="img/imginfo/info14.png"></div>
+                        </li>
+                        <li>
+                            <div class="div1">
+                                <a class="zoomPic" href="img/imginfo/15.jpg"><img src="img/imginfo/pic15.jpg"></a>
+                            </div>
+                            <div class="div2">
+                                <div class="div2-1">
+                                    <span class="num15"></span>
+                                </div>
+                                <div class="div2-2 obj15" style="position: relative">
+                                    <div class="voteIconSure obj1515" style="position: absolute" hidden>
+                                        <img src="img/voteIconSure.png">
+                                    </div>
+                                    <img src="img/voteIcon.png">
+                                </div>
+                            </div>
+                            <div class="div3"><img src="img/imginfo/info15.png"></div>
+                        </li>
+                        <li>
+                            <div class="div1">
+                                <a class="zoomPic" href="img/imginfo/16.jpg"><img src="img/imginfo/pic16.jpg"></a>
+                            </div>
+                            <div class="div2">
+                                <div class="div2-1">
+                                    <span class="num16"></span>
+                                </div>
+                                <div class="div2-2 obj16" style="position: relative">
+                                    <div class="voteIconSure obj1616" style="position: absolute" hidden>
+                                        <img src="img/voteIconSure.png">
+                                    </div>
+                                    <img src="img/voteIcon.png">
+                                </div>
+                            </div>
+                            <div class="div3"><img src="img/imginfo/info16.png"></div>
+                        </li>
+                        <li>
+                            <div class="div1">
+                                <a class="zoomPic" href="img/imginfo/17.jpg"><img src="img/imginfo/pic17.jpg"></a>
+                            </div>
+                            <div class="div2">
+                                <div class="div2-1">
+                                    <span class="num17"></span>
+                                </div>
+                                <div class="div2-2 obj17" style="position: relative">
+                                    <div class="voteIconSure obj1717" style="position: absolute" hidden>
+                                        <img src="img/voteIconSure.png">
+                                    </div>
+                                    <img src="img/voteIcon.png">
+                                </div>
+                            </div>
+                            <div class="div3"><img src="img/imginfo/info17.png"></div>
+                        </li>
+                        <li>
+                            <div class="div1">
+                                <a class="zoomPic" href="img/imginfo/18.jpg"><img src="img/imginfo/pic18.jpg"></a>
+                            </div>
+                            <div class="div2">
+                                <div class="div2-1">
+                                    <span class="num18"></span>
+                                </div>
+                                <div class="div2-2 obj18" style="position: relative">
+                                    <div class="voteIconSure obj1818" style="position: absolute" hidden>
+                                        <img src="img/voteIconSure.png">
+                                    </div>
+                                    <img src="img/voteIcon.png">
+                                </div>
+                            </div>
+                            <div class="div3"><img src="img/imginfo/info18.png"></div>
+                        </li>
+                        <li>
+                            <div class="div1">
+                                <a class="zoomPic" href="img/imginfo/19.jpg"><img src="img/imginfo/pic19.jpg"></a>
+                            </div>
+                            <div class="div2">
+                                <div class="div2-1">
+                                    <span class="num19"></span>
+                                </div>
+                                <div class="div2-2 obj19" style="position: relative">
+                                    <div class="voteIconSure obj1919" style="position: absolute" hidden>
+                                        <img src="img/voteIconSure.png">
+                                    </div>
+                                    <img src="img/voteIcon.png">
+                                </div>
+                            </div>
+                            <div class="div3"><img src="img/imginfo/info19.png"></div>
+                        </li>
+                        <li>
+                            <div class="div1">
+                                <a class="zoomPic" href="img/imginfo/20.jpg"><img src="img/imginfo/pic20.jpg"></a>
+                            </div>
+                            <div class="div2">
+                                <div class="div2-1">
+                                    <span class="num20"></span>
+                                </div>
+                                <div class="div2-2 obj20" style="position: relative">
+                                    <div class="voteIconSure obj2020" style="position: absolute" hidden>
+                                        <img src="img/voteIconSure.png">
+                                    </div>
+                                    <img src="img/voteIcon.png">
+                                </div>
+                            </div>
+                            <div class="div3"><img src="img/imginfo/info20.png"></div>
+                        </li>
+                    </ul>
+                   <div class="vote"><span>VOTE</span></div>
+               </div>
+
+            </div>
+
+            <div class="bottom">
+                <div class="note">
+                    <div class="instruction"><img src="img/instruction.png"></div>
+                    <div class="bottomImg1"><img src="img/bottomImg1.png"></div>
+                    <div class="bottomImg2"><img src="img/bottomImg2.png"></div>
+                    <div class="bottomImg3"><img src="img/bottomImg3.png"></div>
+                </div>
+            </div>
+        </div>
+        <div class="popupWindow-bg" hidden>
+            <div class="popupWindow">
+                <div class="switch"><img class="imgSwitch" src="img/icon.png"/></div>
+                <div class="form">
+                    <input id="username" name="username" type="text" placeholder="USERNAME" required>
+                    <input id="password" name="password" type="password" placeholder="PASSWORD" required>
+                    <div class="submit"><span>LOGIN</span></div>
+
+                    <div class="channels">
+                        <div class="facebook" style="position: relative">
+                            <div class="facebook2" style="position: absolute;">
+                                <img src="img/facebooknew.png">
+                            </div>
+                            <img src="img/facebooknew2.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="popupWindowBG"><img src="img/popupWindow.png"></div>
+        </div>
+        <img src="img/bg.png">
+    </div>
+
+</body>
+</html>

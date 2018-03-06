@@ -1,0 +1,36 @@
+.note{
+    width:78.9%;
+    height: 100%;
+    margin-top: 1.2%;
+    margin-left: 10.6%;
+    background-image: url("../img/bottom.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.instruction{
+    width: 60%;
+    margin-left: 20%;
+    position: relative;
+}
+
+.bottomImg1{
+    width: 23%;
+    height: auto;
+    margin-left: 20%;
+    margin-top: 1%;
+    float:left;
+}
+
+.bottomImg2{
+    margin-top: 1%;
+    float: left;
+    width: 24.2%;
+    height: auto;
+}
+
+.bottomImg3{
+    width: 24.2%;
+    height: auto;
+    margin-left: 32%;
+}

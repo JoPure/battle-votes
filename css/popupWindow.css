@@ -1,0 +1,181 @@
+.popupWindow-bg{
+    position:absolute;
+    width:100%;
+    height:100%;
+    z-index:999;
+    background-color:rgba(0,30,67,0.7);
+}
+
+.popupWindow{
+    width: 40%;
+    height: 18%;
+    margin-left: 32.2%;
+    margin-top: 5%;
+    position: absolute;
+    z-index: 2;
+    /*background-color: black;*/
+    /*background-image: url("../img/popupWindow.png");*/
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.popupWindowBG{
+    width: 40%;
+    height: 18%;
+    margin-left: 32.2%;
+    margin-top: 5%;
+    position: absolute;
+    z-index: 1;
+}
+
+
+.form{
+    width: 39%;
+    height: 51%;
+    display:block;
+    margin-top: 23%;
+    margin-left: 10%;
+    text-align: center;
+    /*opacity: 0.5;*/
+}
+
+
+input:focus{
+    outline:0;
+    border: 0;
+}
+
+input{
+    width:95%;
+    height:18.6%;
+    text-align: center;
+    font-size: 14px;
+    font-family: "Î¢ÈíÑÅºÚ";
+    color: #FFFFFF;
+    margin-top: 6%;
+    border: 0;
+    background-color: rgb(32,96,172);
+}
+
+.channels{
+    width:95%;
+    height:18.6%;
+    margin-top: 6%;
+    margin-left: 2.5%;
+}
+
+.facebook{
+    width:100%;
+    height:100%;
+    float: left;
+    display: table;
+    position: relative;
+    cursor: pointer;
+}
+
+.facebook2{
+    width:100%;
+    height:auto;
+    cursor: pointer;
+}
+
+.facebook2 img{
+    width:100%;
+}
+
+.facebook:hover .facebook2 img{
+    opacity: 0;
+}
+
+.guest:hover .guest2 img{
+    opacity: 0;
+}
+
+.guest{
+    width:48%;
+    height:100%;
+    margin-left: 4%;
+    float: left;
+    display: table;
+    position: relative;
+    cursor: pointer;
+}
+
+.guest2{
+    width:100%;
+    height:auto;
+    cursor: pointer;
+}
+.guest2 img{
+    width:100%;
+}
+
+
+.submit{
+    width: 95%;
+    height: 21%;
+    margin-top: 6%;
+    position: relative;
+
+    margin-left: 2.5%;
+    display: table;
+    background-color: rgb(234,234,112);
+}
+
+.submit span{
+    font-family: Arial;
+    color: rgb(219,104,27);
+    font-size: 14px;
+    font-weight: bold;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.submit:hover{
+    background-color: rgb(234, 181, 0);;
+}
+
+.img1{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+.img2{
+    position: absolute;
+    z-index: 9999;
+    margin: 0;
+}
+
+.switch{
+    width: 6%;
+    height: auto;
+    position: absolute;
+    margin-left: 80%;
+    margin-top: 20%;
+}
+
+
+
+.imgSwitch{
+    width:100%;
+    cursor: pointer;
+}
+
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: #FFFFFF;
+}
+
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: #FFFFFF;
+}
+
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+    color: #FFFFFF;
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+    color: #FFFFFF;
+}
